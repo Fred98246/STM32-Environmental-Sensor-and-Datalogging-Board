@@ -38,4 +38,4 @@ The board utilizes a dedicated I2C bus to monitor multiple environmental paramet
 All necessary files to manufacture this board are located in the `/manufacturing` directory. The total BOM cost for the primary integrated circuits and connectors is approximately 19.97 € per board Ensure that your PCB manufacturer follows standard 2-layer or 4-layer stackups as defined in the KiCad design rules.
 
 ## Author
-# FDC
+FDC
