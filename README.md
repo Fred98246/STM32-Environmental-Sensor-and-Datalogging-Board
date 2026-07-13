@@ -2,7 +2,7 @@
 # Description:
 An open-source STM32F103C8T6 development board designed for environmental monitoring, featuring integrated Li-Ion battery management, USB-C, MicroSD data logging, and onboard I2C sensors for air quality, temperature, humidity, and ambient light.
 
-# STM32 Plant & Environmental Monitor
+# STM32 Environmental Monitor
 
 ## Overview
 This repository contains the KiCad hardware design files for a custom environmental and plant monitoring board. The system is built around the STM32F103C8T6 ARM Cortex-M3 microcontroller and is fully equipped for standalone data logging. It features a complete onboard power management system with seamless load sharing, allowing the board to run on a Li-Ion battery or via USB-C. 
