@@ -37,7 +37,7 @@ Designing this board within a 40x58mm footprint required careful attention to PC
 
 *   **4-Layer Stackup:** To accommodate the component density and maintain strict signal integrity, a 4-layer PCB was utilized (Top Signal, Ground Plane, Power Plane, Bottom Signal). This continuous internal ground plane is critical for providing short return paths for high-frequency signals and minimizing electromagnetic interference (EMI).
 *   **USB Differential Routing:** The USB D+ and D- lines require 90-ohm differential impedance matching. The 4-layer stackup allowed for calculating precise trace widths and spacing over the internal ground plane to hit this impedance target, ensuring reliable USB enumeration and data transfer.
-*   **MicroSD SPI Speeds:** Routing the SPI bus for the SD card required careful trace length matching and spacing. Ensuring the clock (SCK) and data lines (MISO/MOSI) run over an unbroken ground plane prevents cross-talk and signal reflection at higher frequencies.
+*   **MicroSD SPI Speeds:** Because SD card SPI operates at moderate speeds, it does not require strict impedance matching or length tuning. The 4-layer stackup provided the flexibility to route these signals easily through vias while maintaining a solid ground reference to minimize general EMI.
 *   **Mixed-Signal Placement:** Analog sensor lines (I2C for SHT3x and OPT3001) are physically separated from high-speed digital traces (USB, SPI, and the 16MHz crystal) to prevent digital switching noise from coupling into the sensitive environmental readings.
 
 *   **Schematic**:
@@ -45,6 +45,7 @@ Designing this board within a 40x58mm footprint required careful attention to PC
 <img width="1145" height="783" alt="image" src="https://github.com/user-attachments/assets/532a8dbd-ed7d-4821-9ba2-b21c88b3c0a2" />
 
 **PCB**:
+<img width="604" height="853" alt="image" src="https://github.com/user-attachments/assets/15077d58-9cfb-4448-9b5e-fafc6d5fc1de" />
 
 
 
