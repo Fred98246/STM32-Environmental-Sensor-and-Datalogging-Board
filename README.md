@@ -45,6 +45,8 @@ Designing this board within a 40x58mm footprint required careful attention to PC
 <img width="1147" height="787" alt="image" src="https://github.com/user-attachments/assets/b9f171b8-46e6-4c7a-94d1-6416da4cf14d" />
 <img width="1145" height="783" alt="image" src="https://github.com/user-attachments/assets/532a8dbd-ed7d-4821-9ba2-b21c88b3c0a2" />
 
+
+
 **PCB**:
 
 <img width="604" height="853" alt="image" src="https://github.com/user-attachments/assets/15077d58-9cfb-4448-9b5e-fafc6d5fc1de" />
