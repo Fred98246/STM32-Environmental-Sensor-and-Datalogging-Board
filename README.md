@@ -9,6 +9,7 @@ The user interface is driven by a rotary encoder and an external SPI display, ma
 *   **Hardware:** Contains the complete KiCad E.D.A. project files, including the schematic and the 4-layer PCB layout.
 *   **Manufacturing:** Includes the generated Gerber files, Drill files, and sheets with the Bill of Materials (BOM) required for PCB fabrication and assembly.
 *   **Firmware:** Contains the `STM32CubeMX` (`.ioc`) configuration file for peripheral initialization and the C/C++ source code.
+*   **Components**: Contains a excel with the list of components, prices and data sheets.
 
 ## Hardware Implementation Details
 
