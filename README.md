@@ -20,9 +20,9 @@ The user interface is driven by a rotary encoder and an external SPI display, ma
 
 ### Power Management
 The power architecture is designed for safe, continuous operation whether plugged in or running on battery:
-*   **Battery Charging:** Handled by the MCP73831/2 IC, drawing 5V from the USB-C port to charge a connected Li-Ion cell[cite: 1].
+*   **Battery Charging:** Handled by the MCP73831/2 IC, drawing 5V from the USB-C port to charge a connected Li-Ion cell.
 *   **Battery Protection:** An AP9101C IC, paired with dual ZXMN3B14F N-Channel MOSFETs, protects the battery from overcharge, overdischarge, and overcurrent scenarios.
-*   **Load Sharing:** An AO3401A P-Channel MOSFET and an SS14 Schottky diode create a seamless load-sharing circuit[cite: 1]. This ensures the system runs directly off USB power when plugged in, allowing the battery to charge optimally without system load interference.
+*   **Load Sharing:** An AO3401A P-Channel MOSFET and an SS14 Schottky diode create a seamless load-sharing circuit. This ensures the system runs directly off USB power when plugged in, allowing the battery to charge optimally without system load interference.
 *   **Regulation:** An AP2112K-3.3TRG1 LDO provides a stable 3.3V supply for the MCU and logic.
 
 ### Sensors & Interfaces
