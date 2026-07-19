@@ -8,7 +8,7 @@ The user interface is driven by a rotary encoder and an external SPI display, ma
 ## Repository Structure
 *   **Hardware:** Contains the complete KiCad E.D.A. project files, including the schematic and the 4-layer PCB layout.
 *   **Manufacturing:** Includes the generated Gerber files, Drill files, and sheets with the Bill of Materials (BOM) required for PCB fabrication and assembly.
-*   **Firmware:** Contains the `STM32CubeMX` (`.ioc`) configuration file for peripheral initialization and the C/C++ source code.
+*   **Firmware:** Contains the `STM32CubeMX` (`.ioc`) configuration file for peripheral initialization and the C/C++ code.
 *   **Components**: Contains a excel with the list of components, prices and data sheets.
 
 ## Hardware Implementation Details
@@ -16,7 +16,7 @@ The user interface is driven by a rotary encoder and an external SPI display, ma
 ### Core Processing
 *   **Microcontroller:** The board is powered by the STM32F103C8T6 ARM Cortex-M3 MCU.
 *   **Clocking:** A 16MHz crystal oscillator (LFXTAL085871) is implemented to provide the precise clocking required for stable USB communication.
-*   **Debugging/Programming:** A low-profile Tag-Connect TC2030 footprint is used for SWD programming, saving critical board space.
+*   **Debugging/Programming:** Connector for SWD programming, via ST-Link V2.
 
 ### Power Management
 The power architecture is designed for safe, continuous operation whether plugged in or running on battery:
@@ -39,6 +39,7 @@ Designing this board within a 40x58mm footprint required careful attention to PC
 *   **USB Differential Routing:** The USB D+ and D- lines require 90-ohm differential impedance matching. The 4-layer stackup allowed for calculating precise trace widths and spacing over the internal ground plane to hit this impedance target, ensuring reliable USB enumeration and data transfer.
 *   **MicroSD SPI Speeds:** Because SD card SPI operates at moderate speeds, it does not require strict impedance matching or length tuning. The 4-layer stackup provided the flexibility to route these signals easily through vias while maintaining a solid ground reference to minimize general EMI.
 *   **Mixed-Signal Placement:** Analog sensor lines (I2C for SHT3x and OPT3001) are physically separated from high-speed digital traces (USB, SPI, and the 16MHz crystal) to prevent digital switching noise from coupling into the sensitive environmental readings.
+*   **Programing** Learning Hall libraries to program in C via STMCUBE IDE. 
 
 *   **Schematic**:
 
