@@ -43,13 +43,6 @@ Designing this board within a 40x58mm footprint required careful attention to PC
 *   **Mixed-Signal Placement:** Analog sensor lines (I2C for SHT3x and OPT3001) are physically separated from high-speed digital traces (USB, SPI, and the 16MHz crystal) to prevent digital switching noise from coupling into the sensitive environmental readings.
 *   **Firmware Architecture:** The C/C++ codebase leverages STM32 HAL libraries, structured with modular driver functions and a streamlined main loop to ensure non-blocking sensor reads and efficient peripheral management.
 
-
-  
-*   **Schematic**:
-
-<img width="1149" height="789" alt="image" src="https://github.com/user-attachments/assets/9d448743-a0b3-4858-af6b-89bec7121a91" />
-<img width="1148" height="787" alt="image" src="https://github.com/user-attachments/assets/d7fae4d0-ccda-4465-9ec7-5a6cb2bcd7d1" />
-
 ## Operational Flow & User Interface: 
 The firmware is structured around an event-driven state machine that handles user interaction, data logging, and strict power efficiency:
 
@@ -62,6 +55,11 @@ The firmware is structured around an event-driven state machine that handles use
 While currently operating as a standalone datalogger, this board was engineered to serve as the precision sensor node for future automated control systems. By linking the onboard environmental telemetry to external physical actuators (such as fans, humidifiers, or motorized blinds), the hardware will transition into a dynamic closed-loop control environment. 
 
 The high-resolution empirical data currently gathered via the SD card and USB interface provides the foundation for mathematical system identification. This allows the physical environment's behavior to be accurately modeled in software like MATLAB, enabling the future calculation of transfer functions and the implementation of tuned PID or automated sequential control logic directly onto the STM32.
+
+*   **Schematic**:
+
+<img width="1149" height="789" alt="image" src="https://github.com/user-attachments/assets/9d448743-a0b3-4858-af6b-89bec7121a91" />
+<img width="1148" height="787" alt="image" src="https://github.com/user-attachments/assets/d7fae4d0-ccda-4465-9ec7-5a6cb2bcd7d1" />
 
 * **PCB**:
 
