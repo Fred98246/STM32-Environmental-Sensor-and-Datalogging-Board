@@ -50,7 +50,7 @@ Designing this board within a 40x58mm footprint required careful attention to PC
 <img width="1149" height="789" alt="image" src="https://github.com/user-attachments/assets/9d448743-a0b3-4858-af6b-89bec7121a91" />
 <img width="1148" height="787" alt="image" src="https://github.com/user-attachments/assets/d7fae4d0-ccda-4465-9ec7-5a6cb2bcd7d1" />
 
-** Operational Flow & User Interface: 
+## Operational Flow & User Interface: 
 The firmware is structured around an event-driven state machine that handles user interaction, data logging, and strict power efficiency:
 
 *   **Startup & Menu Navigation:** The system is awakened by a physical press of the rotary encoder. The TFT display initializes and presents an interactive menu where the user can select to view Temperature, Humidity, or Ambient Light.
