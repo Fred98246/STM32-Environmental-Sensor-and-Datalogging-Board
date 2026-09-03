@@ -67,7 +67,8 @@ The high-resolution empirical data currently gathered via the SD card and USB in
 
 * **3D View**:
 
-<img width="536" height="730" alt="image" src="https://github.com/user-attachments/assets/e380b3b4-6210-40be-927c-a049ae12406d" />
+<img width="946" height="615" alt="image" src="https://github.com/user-attachments/assets/4f7a2858-cb50-44f8-8307-caf1dbf00e72" />
+
 
 
 
